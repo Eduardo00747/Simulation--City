@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class gameManager : MonoBehaviour
 {
+
     [SerializeField]
     private GameObject enchente; // Referência ao objeto "Enchente"
 
@@ -15,8 +16,8 @@ public class gameManager : MonoBehaviour
     {
         StartCoroutine(DesativarEnchenteDepoisDeTempo(20f)); // Iniciar a coroutine para desativar depois de 14 segundos
         StartCoroutine(AtivarAlagamentoDepoisDeTempo(13f)); // Iniciar a coroutine para ativar depois de 14 segundos
-
     }
+
 
     IEnumerator DesativarEnchenteDepoisDeTempo(float tempo)
     {
